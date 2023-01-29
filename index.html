@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1 class="siteTitle">The Odin Library</h1>
+
+        <p><strong>Instructions: </strong></p>
+        <ol>
+            <li>Fill in name of the author, the book title and the number of pages that the book has.</li>
+            <li>To change the read status of the book, click on the button for the book whose read status you would like to change.</li>
+            <li>To delete the book, click on the delete book for the book you would like to remove from the library.</li>
+        </ol>
+
+        <div class="row">
+            <div class="column left"">
+                <h2>Add a book</h2>
+                <form action="">
+                    <label for="author">Author:</label><br>
+                    <input type="text" id="author" name="author" required><br>
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="title" name="title" required><br>
+                    <label for="numPages">Number of Pages:</label><br>
+                    <input type="number" id="numPages" name="numPages" required><br><br>
+                    <input type="submit" value="Add Book" onclick="preventDefault(event)">
+                  </form> 
+            </div>
+            <div class="column right" style="background-color:#bbb;">
+                <table id="bookTable">
+                    <tr>
+                        <th>Author</th>
+                        <th>Title</th>
+                        <th>Number of Pages</th>
+                        <th>Status</th>
+                        <th>Delete</th>
+                    </tr>
+                  </table>
+            </div>
+          </div>
+
+        
+          
+          
+        
+        <script src="./script.js" async defer></script>
+    </body>
+</html>

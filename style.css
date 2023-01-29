@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.column {
+    float: left;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 75%;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.siteTitle{
+    text-align: center;
+}
+
+ol {
+    margin-bottom: 48px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: #3A3B3C;
+    padding: 8px;
+    color: #FFF;
+}
+
+th:nth-child(1){
+    width: 15%;
+}
+
+th:nth-child(2){
+    width: 25%;
+}
+
+th:nth-child(3), th:nth-child(4), th:nth-child(5) {
+    width: 10%;
+}
+
+tr:nth-child(even){
+    background-color: #D3D3D3;
+}
+
+tr:nth-child(odd){
+    background-color: #FFFFFF;
+}
+
+td{
+    padding: 4px;
+}
+
+h2 {
+    margin: auto auto 12px 20px;
+}
+
+form {
+    margin-left: 20px;
+}
+
+input {
+    border-radius: 4px;
+    border: solid 1px;
+    border-color: #000;
+    font-size: 1em;
+    margin-bottom: 6px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input[type=submit] {
+    background-color: #D3D3D3;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background-color: #FFF;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: solid 1px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
